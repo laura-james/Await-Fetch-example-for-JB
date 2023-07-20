@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Await/ Fetch example for JB</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <script src="script.js"></script>
+
+ <p> Retrieve data from here: <a href="https://flaskfromscratch.laurajamesbcs.repl.co/ajaxtest">https://flaskfromscratch.laurajamesbcs.repl.co/ajaxtest</a>
+   <select id="selectme">
+     <option value="yes">Yes</option>
+     <option value="no">No</option>
+     <option value="no">Only for demo</option>
+     <option value="no">Doesn't do anything</option>
+   </select>
+ </p>
+  <button onclick="getdata(getElementById('selectme').value)">Fetch results</button>
+  <button onclick="clearResults()">Clear results</button>
+  <div id="stuff">results appear here</div>
+</body>
+
+</html>
